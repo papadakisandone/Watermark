@@ -61,10 +61,12 @@ def start_to_add_watermark():
         # draw watermark in the bottom right corner
         draw.text((x, y), text, font=font)
 
-        # create the directory if not exist
-        pathlib.Path('img/img_watermark').mkdir(parents=True, exist_ok=True)
+       # create the directory if not exist
+        pathlib.Path(f'{FOLDER_PATH}img_with_watermark').mkdir(parents=True, exist_ok=True)
+
         # Save watermarked image
-        img.save(f"img/img_watermark/{img_path.split('img')[1]}")
+        img_name = img_path.split('\\')[1]
+        img.save(f"{FOLDER_PATH}img_with_watermark/{img_name}")
 
         label_info.grid(column=0, row=5, sticky=W, pady=2)
         label_info.config(text='WaterMark Completed!!!')
