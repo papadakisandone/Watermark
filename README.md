@@ -5,3 +5,6 @@ Choose the folder with the pictures your want to have watermark (text), write yo
 
 When the program finish with watermarks, it will create a new folder with the name 'img_with_watermark' in the same level with the folder that we choose at the begin.
 There are all the new fotos with the watermark.
+
+example:
+![bg](https://user-images.githubusercontent.com/83516016/152698952-ed88bba6-79ca-43ac-ba09-5fc54f38706a.jpg)
