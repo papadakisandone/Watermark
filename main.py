@@ -13,7 +13,6 @@ def choose_directory():
     window.directory = tkinter.filedialog.askdirectory()
     FOLDER_PATH = window.directory
 
-    # print(FOLDER_PATH)
     label_choose['text'] = FOLDER_PATH
     button_folder['text'] = "Change Folder Path"
     load_images_from_folder(FOLDER_PATH)
@@ -41,7 +40,6 @@ def load_images_from_folder(FOLDER_PATH):
 def start_to_add_watermark():
     # Gets text from the entry
     watermark_text = entry_watermark.get()
-    print(watermark_text)
 
     for img_path in tqdm(files, desc='wait', colour='blue'):
         img = Image.open(img_path)
